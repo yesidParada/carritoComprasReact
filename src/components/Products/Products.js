@@ -7,9 +7,11 @@ import './Products.scss';
 export default function Products(props) {
 
   const { 
-    products: { loading, error, result},
+    products: { loading, result},
     addProductCard
   } = props;
+
+  console.log(result)
 
   return (
     <Container>

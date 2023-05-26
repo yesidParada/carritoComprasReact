@@ -10,6 +10,7 @@ export default function useFetch(url, options) {
             try {
                 const response = await fetch(url, options);
                 const json = await response.json();
+                console.log(json)
                 setResult(json);
                 setLoading(false);
             } catch (err) {
